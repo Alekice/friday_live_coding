@@ -1,6 +1,17 @@
 .contact-us {
     background-color: $color-background;
-    padding: 62px 82px;
+    padding: 62px 0;
+
+    @include media-tablet {
+        text-align: center;
+    }
+}
+
+.contact-us__container {
+    @include media-tablet {
+        flex-direction: column;
+        flex-basis: 100%;
+    }
 }
 
 .contact-us__title {
@@ -9,6 +20,11 @@
 
 .contact-us__content {
     max-width: 528px;
+
+    @include media-tablet {
+        max-width: 100%;
+        margin-bottom: 52px;
+    }
 }
 
 .contact-us__text {
@@ -47,10 +63,40 @@
 
 .contact-us__line {
     margin-bottom: 19px;
+
+    @include media-mobile {
+        flex-direction: column;
+        margin-bottom: 0;
+
+        > * {
+            margin-bottom: 19px;
+        }
+    }
 }
 
 .contact-us__button {
     > * {
         min-width: 117px;
     }
+
+    @include media-mobile {
+        margin-top: 24px;
+    }
+}
+
+.contact-us__link {
+    @include font($size: 2.5rem, $height: 2.6rem, $weight: normal);
+
+    @include media-tablet {
+        justify-content: center;
+    }
+}
+
+.contact-us__icon {
+    background-color: $color-light;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    vertical-align: middle;
+    margin-right: 11px;
 }

@@ -13,11 +13,13 @@
 @import "base/logo";
 @import "base/icons";
 @import "base/tags";
+@import "base/hamburger";
 
 //LAYOUTS
 @import "layouts/wrapper";
 @import "layouts/header";
 @import "layouts/columns";
+@import "layouts/footer";
 
 // COMPONENTS
 @import "components/contact-us";
@@ -25,3 +27,4 @@
 @import "components/navigation";
 @import "components/tools";
 @import "components/strategies";
+@import "components/about-us";

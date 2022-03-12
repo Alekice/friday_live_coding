@@ -1,5 +1,20 @@
 .strategies {
     padding: 30px 0;
+
+    @include media-tablet {
+        text-align: center;
+    }
+}
+
+.strategy {
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    img {
+        aspect-ratio: 47 / 25;
+    }
 }
 
 .strategies__title {
@@ -12,16 +27,36 @@
 
 .strategies__tags {
     margin-bottom: 31px;
+
+    @include media-tablet {
+        justify-content: center;
+    }
 }
 
 .strategy-wrapper {
     > * {
         margin-bottom: 30px;
+
+        @include media-tablet {
+            flex-basis: 48%;
+            text-align: left;
+        }
+
+        @include media-mobile {
+            flex-basis: 100%;
+        }
     }
 }
 
 .strategy__content {
     padding: 24px 33px 26px;
+    flex-grow: 1;
+
+    @include media-tablet {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
 
 .strategy__name {
