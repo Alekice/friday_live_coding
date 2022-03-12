@@ -1,0 +1,63 @@
+.ico {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.ico_play {
+    background-image: url('../assets/icons/play.svg');
+    width: 18px;
+    height: 19px;
+}
+
+.icon-square {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 19px;
+
+    &_violet {
+        background-color: $color-violet;
+    }
+
+    &_yellow {
+        background-color: $color-yellow;
+    }
+
+    &_red {
+        background-color: $color-red;
+    }
+
+    &_blue {
+        background-color: $color-blue;
+    }
+}
+
+.ico_arrow {
+    background-image: url('../assets/icons/arrow.svg');
+    width: 12px;
+    height: 17px;
+}
+
+.ico_wave{
+    background-image: url('../assets/icons/wave.svg');
+    width: 18px;
+    height: 14px;
+}
+
+.ico_heart {
+    background-image: url('../assets/icons/heart.svg');
+    width: 17px;
+    height: 15px;
+}
+
+.ico_sandclock {
+    background-image: url('../assets/icons/sandclock.svg');
+    width: 15px;
+    height: 17px;
+}
+
+.ico_phone {
+    background-image: url('../assets/icons/')
+}
