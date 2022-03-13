@@ -962,7 +962,7 @@ h5 {
 
 .tools__wrapper {
   padding-bottom: 90px;
-  background-image: url("../assets/bg.png");
+  background-image: url("../src/assets/bg.png");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 100%;
@@ -1020,12 +1020,16 @@ h5 {
 
 .strategy {
   cursor: pointer;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
 }
-.strategy img {
-  aspect-ratio: 47/25;
+@media (max-width: 768px) {
+  .strategy {
+    overflow: hidden;
+  }
+  .strategy img {
+    aspect-ratio: 47/25;
+  }
 }
 
 .strategies__title {

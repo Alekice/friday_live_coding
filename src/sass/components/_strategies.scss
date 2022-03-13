@@ -7,13 +7,16 @@
 }
 
 .strategy {
-    cursor: pointer;
-    overflow: hidden;
+    cursor: pointer;    
     display: flex;
     flex-direction: column;
 
-    img {
-        aspect-ratio: 47 / 25;
+    @include media-tablet {
+        overflow: hidden;
+
+        img {
+            aspect-ratio: 47 / 25;
+        }
     }
 }
 
